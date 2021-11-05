@@ -47,7 +47,6 @@ const CountriesInputField = ({
                 : "+0",
             };
           });
-          console.log(results);
           setCountries(results);
           localStorage.setItem("countries", JSON.stringify(results));
         } catch (err) {

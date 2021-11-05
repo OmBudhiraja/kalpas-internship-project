@@ -95,6 +95,10 @@ const FeedbackForm = () => {
         isError = true;
       }
 
+      if (isError) {
+        setIsCheckingData(false);
+      }
+
       //if no error is there , sent data to database
       if (!isError) {
         // firebase
